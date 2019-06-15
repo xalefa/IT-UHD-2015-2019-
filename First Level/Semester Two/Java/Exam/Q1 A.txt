@@ -1,0 +1,41 @@
+package midtermexam;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Govar
+ * Template  A:
+ * Q1/
+ * find means age among first grade students (consider there are 7 students 
+ * and you have to read grades from keyboard by using scanner) use do while
+ */
+
+public class MidTermExam {
+
+ 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        //Answer Q1:
+        int i=1;
+        double sum=0.0;
+        double avg=0.0;
+        do{
+            System.out.println("enter grade "+i);
+            int x = input.nextInt();
+            sum=sum+x;
+            i++;
+        }
+        while (i<=7);
+        avg=sum/7;
+        double [] b = new double[5];
+        for (int j = 0; j < b.length; j++) {
+            b[j]=avg;   
+        }
+        //System.out.println("Array is equal: "+Arrays.toString(b));
+        for (int j = 0; j < b.length; j++) {
+            System.out.print(b[j]+"\t");   
+        } 
+       }
+      }

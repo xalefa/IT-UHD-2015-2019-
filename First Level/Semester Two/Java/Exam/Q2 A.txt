@@ -1,0 +1,32 @@
+
+package midtermexam;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Govar
+ * Template  A:
+ * Q2/
+ * write a program to check if the word "computer" found in array or not 
+   if found display its location
+ */
+public class MidTermExam {
+
+ 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        //Answer :
+        int xx=-1;
+        String found;
+        System.out.println("enter name of department you want to search");
+        String search=input.nextLine();
+        String [] departments={"english","low","computer","adminstration"};
+        for (int j = 0; j < departments.length; j++) {
+            if (departments[j].equalsIgnoreCase(search))
+                  xx=j;
+        }System.out.println("the index is "+xx);
+    }
+}
